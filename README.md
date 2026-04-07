@@ -1,2 +1,2 @@
 # blog-content
-Project for CRUD blog contect
+Project API for CRUD blog contect
