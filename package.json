@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "",
   "scripts": {
-    "postinstall": "prisma generate",
+    "postinstall": "prisma generate && [ \"$VERCEL\" = \"1\" ] && prisma migrate deploy || true",
     "build": "npx prisma generate && nest build",
     "start": "nest start",
     "start:dev": "nest start --watch",
